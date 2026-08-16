@@ -6,7 +6,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
-## [0.4.0] — POLIMENTO 
+## [0.4.0] — POLIMENTO  a
 **Data:** 2026-08-16
 
 ### Adicionado
