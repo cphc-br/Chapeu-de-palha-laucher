@@ -6,7 +6,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
-## [0.4.0] — POLIMENTO FINAL
+## [0.4.0] — POLIMENTO 
 **Data:** 2026-08-16
 
 ### Adicionado
@@ -70,7 +70,6 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - **Cadeia secreta de descobertas** com recompensa final — a sequência completa permanece como parte da exploração do projeto
 - **Painel CLASSIFICADO**: canal restrito com terminal de comando e sistema de verificação de identidade
 - **Replay da sequência de boot** na estação REDE
-- Primeiros elementos interativos escondidos no ambiente
 - **Mensagens ocultas** espalhadas pela interface, incluindo dicas, interações e elementos descobríveis durante a navegação
 - **Painel de atualizações do programa**
 - **Sistema de anúncios**
