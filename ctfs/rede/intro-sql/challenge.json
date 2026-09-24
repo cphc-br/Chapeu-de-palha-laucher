@@ -1,0 +1,9 @@
+{
+    "id": "intro-sqli",
+    "name": "INTRO SQLI",
+    "difficulty": "easy",
+    "desc": "Bypass de autenticacao por SQL injection. Tente entrar como admin sem a senha.",
+    "port": 8080,
+    "container": "chapeu-ctf-intro-sqli",
+    "image": "chapeu-ctf-intro-sqli"
+}
