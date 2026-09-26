@@ -11,7 +11,9 @@ $query = "SELECT * FROM users WHERE username = '$username' AND password = '$pass
 $result = $db->query($query);
 
 if ($result && $result->fetchArray()) {
-    echo "Flag: flag{web_exploitation_success}";
+    // chave injetada pelo launcher (-e CHAPEU_FLAG / -e FLAG) com fallback estatico
+    $flag = getenv('CHAPEU_FLAG') ?: (getenv('FLAG') ?: 'flag{web_exploitation_success}');
+    echo "Flag: " . $flag;
 } else {
     echo "Invalid credentials.";
 }
