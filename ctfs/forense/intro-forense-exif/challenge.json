@@ -1,0 +1,9 @@
+{
+    "id": "intro-forense-exif",
+    "name": "INTRO FORENSE - EXIF",
+    "difficulty": "Facil",
+    "desc": "Analise forense de metadados. Baixe a imagem e rode exiftool para achar a flag.",
+    "port": 8082,
+    "container": "chapeu-ctf-intro-forense-exif",
+    "image": "chapeu-ctf-intro-forense-exif"
+}
