@@ -34,7 +34,7 @@ app.post('/login', (req, res) => {
     if (user.username !== 'admin') {
       return res.send(`Login ok, mas voce nao e admin.`);
     }
-    const flag = process.env.CHAPEU_FLAG || process.env.FLAG || 'flag{nosql_injection_success}';
+    const flag = process.env.CHAPEU_FLAG || process.env.FLAG || 'sem-chave';
     return res.send(`Flag: ${flag}`);
   });
 });
