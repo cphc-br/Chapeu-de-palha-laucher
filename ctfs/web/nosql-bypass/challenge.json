@@ -1,7 +1,7 @@
 {
     "id": "intro-nosqli",
     "name": "INTRO NOSQLI",
-    "difficulty": "Facil",
+    "difficulty": "Medio",
     "desc": "Bypass de autenticacao por NoSQL injection. Tente entrar como admin sem a senha.",
     "port": 8081,
     "container": "chapeu-ctf-intro-nosqli",
