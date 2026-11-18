@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>INTRO NOSQLI // LOGIN</title>
+    <style>
+        body { font-family: 'Courier New', monospace; background: #0a0a0a; color: #e8e8e8; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .box { background: #111; border: 1px solid #333; border-left: 4px solid #c9a227; padding: 30px 36px; width: 320px; }
+        h1 { font-size: 15px; letter-spacing: 3px; color: #c9a227; margin-top: 0; }
+        label { display: block; font-size: 11px; letter-spacing: 2px; color: #999; margin: 14px 0 4px; }
+        input { width: 100%; background: #0a0a0a; border: 1px solid #333; color: #e8e8e8; padding: 8px; font-family: inherit; box-sizing: border-box; }
+        button { margin-top: 18px; width: 100%; background: rgba(201,162,39,0.15); border: 1px solid #c9a227; color: #c9a227; padding: 9px; font-family: inherit; letter-spacing: 2px; cursor: pointer; }
+        button:hover { background: rgba(201,162,39,0.3); }
+        .hint { margin-top: 14px; font-size: 10px; color: #555; letter-spacing: 1px; }
+        pre#out { white-space: pre-wrap; color: #0f0; font-size: 11px; margin-top: 10px; min-height: 14px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>// INTRO NOSQLI //</h1>
+        <label>USERNAME</label>
+        <input type="text" id="username">
+        <label>PASSWORD</label>
+        <input type="password" id="password">
+        <button onclick="doLogin()">LOGIN</button>
+        <pre id="out"></pre>
+        <div class="hint">chapeu de palha hacker club // web_002</div>
+    </div>
+    <script>
+        async function doLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+            document.getElementById('out').textContent = await res.text();
+        }
+    </script>
+</body>
+</html>
